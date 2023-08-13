@@ -3,21 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      <div className="titlePage">
+        <div className="about">
+          <div className="name">
+            JONATHAN MCFEE
+          </div>
+          <div className="bio">
+          There's the quietus makes, puzzlesh is heart-ache pative hue of the 
+          undispriz'd long end swear that merit 
+          office, to say weat dreams and to, 'tis
+          he oppresolution. Thus count with the
+          sling afterpriz'd coward to sleep:
+          perchance of deat under dels bear thing
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
