@@ -27,12 +27,12 @@ function App() {
             </div>
           </div>
           <div className="home-links">
-            <ul className="links-list">
-              <li className="home-link">ABOUT</li>
-              <li className="home-link">SKILLS</li>
-              <li className="home-link">PROJECTS</li>
-              <li className="home-link">CONTACT</li>
-            </ul>
+          <ul className="links-list">
+            <li className="home-link home-link-hover" onClick={() => scrollTo('about')}>ABOUT</li>
+            <li className="home-link home-link-hover" onClick={() => scrollTo('skills')}>SKILLS</li>
+            <li className="home-link home-link-hover" onClick={() => scrollTo('projects')}>PROJECTS</li>
+            <li className="home-link home-link-hover" onClick={() => scrollTo('contact')}>CONTACT</li>
+          </ul>
           </div>
         </div>
         <div id="about" className="page">
@@ -56,4 +56,13 @@ function App() {
   );
 }
 
-export { App };
+// Inside your component
+const scrollTo = (targetPage) => {
+  const aboutSection = document.getElementById(targetPage);
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
+export { App, scrollTo };

@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     background-color: #0f0f0f;
-    border: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
     color: #ffffff;
     padding: 10px 0;
   }
@@ -46,6 +46,16 @@
     cursor: pointer;
     padding: 5px;
     flex-grow: 1;
+  }
+
+  .nav-item-hover-right:hover {
+    cursor: pointer;
+    color: #888; /* Adjust the color to your preference */
+  }
+
+  .nav-item-hover-right:hover {
+    cursor: pointer;
+    color: #8b8652; /* Adjust the color to your preference */
   }
   
 .active {

@@ -8,7 +8,6 @@
 }
 .page {
   padding-top: 5vh;
-  border: 1px solid white;
 }
 #home {
   display: grid;
@@ -70,29 +69,46 @@
   text-align: right;
 }
 
+.home-link-hover:hover {
+  cursor: pointer;
+  color: #888; /* Adjust the color to your preference */
+}
+
 #about {
   padding-top: 20vh;
   padding-bottom: 20vh;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .about-me {
-  width: 49%;
+  flex: 1 1 30%;
   text-align: left;
-  padding-left: 5vw;
-  width: 15vw;
+  padding-left: 3vw;
+  padding-right: 7vw;
   color: #BDB679;
 }
 
+.about-me-title {
+  font-family: Readex Pro;
+  font-size: calc(5vh + 1vw);
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.about-me-info {
+  font-family: Readex Pro;
+  font-size: calc(1.5vh + 1vw);
+  font-style: normal;
+  font-weight: 500;
+
+}
+
 .headshot {
-  max-width: 65%;
-  max-height:65%;
-  align-items: center;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  max-width: 45%;
+  max-height: 100%;
+  padding-left: 4.5vw;
+  text-align: center;
 }
