@@ -8,24 +8,25 @@
 
 .page {
   display: grid;
-  
+}
+.title-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .about {
   text-align: left;
-  padding-left: 50px;
-  padding-top: 50px;
-  height: 50vh;
-  width: 650px;
+  padding-left: 40px;
+  width: 700px;
   color: #BDB679;
 }
 
-.name {
+.div-name {
   font-family: Readex Pro;
   font-size: calc(12vh + 1vw);
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  padding-bottom: 20px;
+  padding-top: 17vh;
+  padding-bottom: 2vh;
 }
 
 .bio {
@@ -45,4 +46,23 @@
   .bio {
     font-size: 5vw;
   }
+}
+.home-links {
+  width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 22vh;
+}
+.links-list {
+  align-items: right;
+  width: auto;
+  padding-top: .5vh;
+}
+.home-link {
+  font-family: Readex Pro;
+  font-size: calc(5.5vh + 1vw);
+  list-style: none;
+  color: #DBDBDB;
+  padding: 10px 0;
+  text-align: right;
 }
