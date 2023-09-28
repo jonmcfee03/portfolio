@@ -3,19 +3,21 @@
   background: #0f0f0f;
 }
 
-/* Adjust layout for screens narrower than 768px (typical mobile screens) */
-
-
-.page {
+.pages {
   display: grid;
 }
-.title-page {
+.page {
+  padding-top: 5vh;
+  border: 1px solid white;
+}
+#home {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr;
 }
-.about {
+.home-about {
   text-align: left;
-  padding-left: 40px;
+  padding-left: 5vw;
   width: 700px;
   color: #BDB679;
 }
@@ -52,6 +54,7 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 22vh;
+  align-items: right;
 }
 .links-list {
   align-items: right;
@@ -65,4 +68,31 @@
   color: #DBDBDB;
   padding: 10px 0;
   text-align: right;
+}
+
+#about {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about-me {
+  width: 49%;
+  text-align: left;
+  padding-left: 5vw;
+  width: 15vw;
+  color: #BDB679;
+}
+
+.headshot {
+  max-width: 65%;
+  max-height:65%;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
