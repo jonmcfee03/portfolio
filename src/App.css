@@ -1,7 +1,10 @@
 
 * {
-  background: #1E1E1E;
+  background: #0f0f0f;
 }
+
+/* Adjust layout for screens narrower than 768px (typical mobile screens) */
+
 
 .page {
   display: grid;
@@ -9,21 +12,37 @@
 }
 .about {
   text-align: left;
-  width: 700px;
+  padding-left: 50px;
+  padding-top: 50px;
+  height: 50vh;
+  width: 650px;
   color: #BDB679;
 }
+
 .name {
   font-family: Readex Pro;
-  font-size: 128px;
+  font-size: calc(12vh + 1vw);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-bottom: 20px;
 }
 
 .bio {
   font-family: Inter;
-  font-size: 40px;
+  font-size: calc(2vh + 1vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+
+/* Adjust font size for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .name {
+    font-size: 8vw; /* Adjust the size as needed for mobile */
+  }
+  .bio {
+    font-size: 5vw;
+  }
 }

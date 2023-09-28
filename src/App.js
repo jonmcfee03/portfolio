@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="page">
       <div className="titlePage">
-        <div className="about">
+        <div id="home" className="about">
           <div className="name">
             JONATHAN MCFEE
           </div>
@@ -18,6 +18,7 @@ function App() {
           perchance of deat under dels bear thing
           </div>
         </div>
+        <div className="links"></div>
       </div>
     </div>
   );
