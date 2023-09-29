@@ -1,6 +1,6 @@
   .navbar {
     font-family: Readex Pro;
-    font-size: calc(1vh + 1vw);
+    font-size: 24px;
     position: fixed;
     display: inline-flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@
     padding: 5px;
     flex-grow: 1;
   }
+
 
   .nav-item-hover:hover {
     text-decoration: underline;

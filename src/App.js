@@ -52,6 +52,28 @@ function App() {
             </div>
           </div>
         </div>
+        <div id="skills" className="page">
+          <div id="languages" className="bubble">
+            <div className='header'>Languages</div>
+            <div className='content'>C++, Python, JavaScript, Node.js, Express.js, 
+                                      HTML, CSS, MATLAB</div>
+          </div>
+          <div id="relevant-courses" className="bubble">
+            <div className='header'>Relevant Courses</div>
+            <div className='content'>Data Structures and Algorithms, Low-Level Systems, 
+                                      Foundations of Computer Science, Discrete Math, 
+                                      Linear Algebra, Calculus I-III</div>
+          </div>
+          <div id="interests" className="bubble">
+            <div className='header'>Interests</div>
+            <div className='content'>Software Engineering, Backend Engineering, 
+                                      Machine Learning, Finance/Trading</div>
+          </div>
+          <div id="development" className="bubble">
+            <div className='header'>Development</div>
+            <div className='content'>Linux, Windows, AWS, Git, DynamoDB, SQL, JSON</div>
+          </div>
+        </div>
       </div>
     </div>
   );
