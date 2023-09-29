@@ -6,9 +6,9 @@
 .pages {
   display: grid;
 }
-.page {
+/* .page {
   padding-top: 5vh;
-}
+} */
 #home {
   display: grid;
   justify-content: space-between;

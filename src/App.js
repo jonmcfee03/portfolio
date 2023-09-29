@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar'
+import { Navbar, setActive } from './components/Navbar';
+import React, { useEffect, useState} from 'react';
 
 
 function App() {
   return (
     <div className="App">
-      <div className="navbar">
-          <Navbar />
-      </div>
+      <Navbar />
       <div className="pages">
         <div id="home" className="page">
           <div className="home-about">
@@ -28,7 +27,9 @@ function App() {
           </div>
           <div className="home-links">
           <ul className="links-list">
-            <li className="home-link home-link-hover" onClick={() => scrollTo('about')}>ABOUT</li>
+            <li className="home-link home-link-hover" onClick={() => {scrollTo('about'); 
+                                                                      setActive('about');}}>
+                ABOUT</li>
             <li className="home-link home-link-hover" onClick={() => scrollTo('skills')}>SKILLS</li>
             <li className="home-link home-link-hover" onClick={() => scrollTo('projects')}>PROJECTS</li>
             <li className="home-link home-link-hover" onClick={() => scrollTo('contact')}>CONTACT</li>

@@ -48,21 +48,12 @@
     flex-grow: 1;
   }
 
-  .nav-item-hover-right:hover {
-    cursor: pointer;
-    color: #888; /* Adjust the color to your preference */
-  }
-
-  .nav-item-hover-right:hover {
-    cursor: pointer;
-    color: #8b8652; /* Adjust the color to your preference */
+  .nav-item-hover:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
   
-.active {
-  list-style: none;
-  cursor: pointer;
-  flex-grow: 1;
-  padding: 5px;
-  text-decoration: underline 1px;
-  text-underline-offset: 4px;
-}
+  .active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
