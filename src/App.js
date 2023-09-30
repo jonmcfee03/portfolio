@@ -16,14 +16,10 @@ function App() {
                 JONATHAN<br/>MCFEE
               </span>
             </div>
-            <div className="bio">
-            There's the quietus makes, puzzlesh is heart-ache pative hue of the 
-            undispriz'd long end swear that merit 
-            office, to say weat dreams and to, 'tis
-            he oppresolution. Thus count with the
-            sling afterpriz'd coward to sleep:
-            perchance of deat under dels bear thing
-            </div>
+            <span className="bio">
+            Computer Science,<br/>University of Michigan '25 <br/>
+            Aspiring Software Engineer
+            </span>
           </div>
           <div className="home-links">
           <ul className="links-list">
@@ -35,6 +31,7 @@ function App() {
             <li className="home-link home-link-hover" onClick={() => scrollTo('contact')}>CONTACT</li>
           </ul>
           </div>
+          <div id="about-navbar-trigger"></div>
         </div>
         <div id="about" className="page">
           <div className="headshot">
@@ -44,35 +41,47 @@ function App() {
           <div className='about-me'>
             <div className="about-me-title">About Me</div>
             <div className="about-me-info">
-            There's the quietus makes, puzzlesh is heart-ache pative 
-            hue of the undispriz'd long end swear that merit office, 
-            to say weat dreams and to, 'tis he oppresolution. Thus count 
-            with the sling afterpriz'd coward to sleep: perchance of 
-            deat under dels bear thing
+            I am a Junior majoring in Computer Science at the University 
+            of Michigan. I am passionate about software 
+            engineering, and I love diving into my studies. Beyond 
+            the classroom, I'm an active member of the Reach Consulting 
+            Group and the Delta Tau Delta Fraternity. I'm a social 
+            person, and I really enjoy making new friends and working 
+            as part of a team.
+            </div>
+          </div>
+          <div id="skills-navbar-trigger"></div>
+        </div>
+        <div id="skills" className="page">
+          <div className="skills-title">Skills</div>
+          <div className="skills-bubbles">
+            <div id="languages" className="bubble">
+              <div className='header'>Languages</div>
+              <div className='content'>C++, Python, JavaScript, Node.js, Express.js, 
+                                        HTML, CSS, MATLAB</div>
+            </div>
+            <div id="relevant-courses" className="bubble">
+              <div className='header'>Relevant Courses</div>
+              <div className='content'>Data Structures and Algorithms, Low-Level Systems, 
+                                        Foundations of Computer Science, Discrete Math, 
+                                        Linear Algebra, Calculus I-III</div>
+            </div>
+            <div id="interests" className="bubble">
+              <div className='header'>Interests</div>
+              <div className='content'>Software Engineering, Backend Engineering, 
+                                        Machine Learning, Finance/Trading</div>
+            </div>
+            <div id="development" className="bubble">
+              <div className='header'>Development</div>
+              <div className='content'>Linux, Windows, AWS, Git, DynamoDB, SQL, JSON</div>
             </div>
           </div>
         </div>
-        <div id="skills" className="page">
-          <div id="languages" className="bubble">
-            <div className='header'>Languages</div>
-            <div className='content'>C++, Python, JavaScript, Node.js, Express.js, 
-                                      HTML, CSS, MATLAB</div>
-          </div>
-          <div id="relevant-courses" className="bubble">
-            <div className='header'>Relevant Courses</div>
-            <div className='content'>Data Structures and Algorithms, Low-Level Systems, 
-                                      Foundations of Computer Science, Discrete Math, 
-                                      Linear Algebra, Calculus I-III</div>
-          </div>
-          <div id="interests" className="bubble">
-            <div className='header'>Interests</div>
-            <div className='content'>Software Engineering, Backend Engineering, 
-                                      Machine Learning, Finance/Trading</div>
-          </div>
-          <div id="development" className="bubble">
-            <div className='header'>Development</div>
-            <div className='content'>Linux, Windows, AWS, Git, DynamoDB, SQL, JSON</div>
-          </div>
+        <div id="projects" className="page">
+          
+        </div>
+        <div id="contact" className="page">
+          
         </div>
       </div>
     </div>

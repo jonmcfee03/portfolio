@@ -6,6 +6,7 @@ let setActive;
 
 function Navbar() {
   const [activeSec, setActiveSec] = useState('home');
+  const [navbarVisible, setNavbarVisible] = useState(false);
 
   // Define the setActive function
   setActive = (section) => {
@@ -15,23 +16,22 @@ function Navbar() {
     useEffect(() => {
       const handleScroll = () => {
         const homeSection = document.getElementById('home');
-        const aboutSection = document.getElementById('about');
-        // const skillsSection = document.getElementById('skills');
+        const aboutSection = document.getElementById('about-navbar-trigger');
+        const skillsSection = document.getElementById('skills-navbar-trigger');
         // const projectsSection = document.getElementById('projects');
         // const contactSection = document.getElementById('contact');
         const scrollY = window.scrollY;
         console.log(scrollY);
-        // if (scrollY >= contactSection.offsetTop) {
         //   setActiveSec('contact');
         // } else if (scrollY >= projectsSection.offsetTop) {
         //   setActiveSec('projects');
-        // } else if (scrollY >= skillsSection.offsetTop) {
-        //   setActiveSec('skills');
-         if (scrollY >= aboutSection.offsetTop) {
-          console.log('about');
+        if (scrollY >= skillsSection.offsetTop) {
+          setActiveSec('skills');
+        } else if (scrollY >= aboutSection.offsetTop) {
           setActiveSec('about');
+          setNavbarVisible(true);
         } else {
-          console.log('home');
+          setNavbarVisible(false);
           setActiveSec('home');
         }
       };
@@ -43,7 +43,7 @@ function Navbar() {
       };
     });
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${navbarVisible ? 'navbar-visible' : ''}`}>
       <div className="nav-left">
         <li className={`nav-item nav-item-hover ${activeSec === 'home' ? 'active' : ''}`} onClick={() => {scrollTo('home'); 
                                                                                                               setActive('home');}}>
@@ -56,7 +56,10 @@ function Navbar() {
                                                                                                                setActiveSec('about');}}>
           ABOUT
           </li>
-          <li className="nav-item nav-item-hover" onClick={() => scrollTo('skills')}>SKILLS</li>
+          <li className={`nav-item nav-item-hover ${activeSec === 'skills' ? 'active' : ''}`} onClick={() => {scrollTo('skills');
+                                                                                                               setActiveSec('skills');}}>
+          SKILLS
+          </li>
           <li className="nav-item nav-item-hover" onClick={() => scrollTo('projects')}>PROJECTS</li>
           <li className="nav-item nav-item-hover" onClick={() => scrollTo('contact')}>CONTACT</li>
         </ul>
