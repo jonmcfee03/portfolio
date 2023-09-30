@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbar, setActive } from './components/Navbar';
-import React, { useEffect, useState} from 'react';
+import React from 'react';
 
 
 function App() {
@@ -89,7 +88,7 @@ function App() {
 }
 
 // Inside your component
-const scrollTo = (targetPage) => {
+export const scrollTo = (targetPage) => {
   const aboutSection = document.getElementById(targetPage);
   if (aboutSection) {
     aboutSection.scrollIntoView({ behavior: 'smooth' });
@@ -97,4 +96,4 @@ const scrollTo = (targetPage) => {
 };
 
 
-export { App, scrollTo };
+export default App;
