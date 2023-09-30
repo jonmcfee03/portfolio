@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/jonathan-mcfee/static/css/main.073c9b0a.css",
-    "main.js": "/jonathan-mcfee/static/js/main.1d73debd.js",
-    "static/js/787.9c1a2677.chunk.js": "/jonathan-mcfee/static/js/787.9c1a2677.chunk.js",
+    "main.css": "/jonathan-mcfee/static/css/main.c5740f6a.css",
+    "main.js": "/jonathan-mcfee/static/js/main.e4c68a1b.js",
+    "static/media/headshot.jpg": "/jonathan-mcfee/static/media/headshot.0ff54dbf68a615920017.jpg",
     "static/media/logo.svg": "/jonathan-mcfee/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/jonathan-mcfee/index.html",
-    "main.073c9b0a.css.map": "/jonathan-mcfee/static/css/main.073c9b0a.css.map",
-    "main.1d73debd.js.map": "/jonathan-mcfee/static/js/main.1d73debd.js.map",
-    "787.9c1a2677.chunk.js.map": "/jonathan-mcfee/static/js/787.9c1a2677.chunk.js.map"
+    "main.c5740f6a.css.map": "/jonathan-mcfee/static/css/main.c5740f6a.css.map",
+    "main.e4c68a1b.js.map": "/jonathan-mcfee/static/js/main.e4c68a1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.1d73debd.js"
+    "static/css/main.c5740f6a.css",
+    "static/js/main.e4c68a1b.js"
   ]
 }
