@@ -18,15 +18,19 @@ function Navbar() {
         const homeSection = document.getElementById('home');
         const aboutSection = document.getElementById('about-navbar-trigger');
         const skillsSection = document.getElementById('skills-navbar-trigger');
-        // const projectsSection = document.getElementById('projects');
-        // const contactSection = document.getElementById('contact');
+        const projectsSection = document.getElementById('projects');
+        const contactSection = document.getElementById('contact');
         const scrollY = window.scrollY;
         console.log(scrollY);
-        //   setActiveSec('contact');
-        // } else if (scrollY >= projectsSection.offsetTop) {
-        //   setActiveSec('projects');
-        if (scrollY >= skillsSection.offsetTop) {
+        if (scrollY >= contactSection.offsetTop) {
+          setActiveSec('contact');
+          setNavbarVisible(true);
+        } else if (scrollY >= projectsSection.offsetTop) {
+          setActiveSec('projects');
+          setNavbarVisible(true);
+        } else if (scrollY >= skillsSection.offsetTop) {
           setActiveSec('skills');
+          setNavbarVisible(true);
         } else if (scrollY >= aboutSection.offsetTop) {
           setActiveSec('about');
           setNavbarVisible(true);
@@ -60,8 +64,14 @@ function Navbar() {
                                                                                                                setActiveSec('skills');}}>
           SKILLS
           </li>
-          <li className="nav-item nav-item-hover" onClick={() => scrollTo('projects')}>PROJECTS</li>
-          <li className="nav-item nav-item-hover" onClick={() => scrollTo('contact')}>CONTACT</li>
+          <li className={`nav-item nav-item-hover ${activeSec === 'projects' ? 'active' : ''}`} onClick={() => {scrollTo('projects');
+                                                                                                               setActiveSec('projects');}}>
+          PROJECTS
+          </li>
+          <li className={`nav-item nav-item-hover ${activeSec === 'contact' ? 'active' : ''}`} onClick={() => {scrollTo('contact');
+                                                                                                               setActiveSec('contact');}}>
+          CONTACT
+          </li>
         </ul>
       </div>
     </nav>

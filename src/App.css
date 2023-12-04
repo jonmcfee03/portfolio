@@ -184,3 +184,72 @@
   max-width: 70%;
   background: none;
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-title {
+  font-family: Readex Pro;
+  color: #BDB679;
+  font-size: calc(5vh + 1vw);
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 5vh; 
+}
+
+.contact-content {
+  display: flex;
+  gap: 5rem;
+}
+
+.contact-bubbles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-bubble {
+  border: 2px solid #BDB679;
+  background: #202020;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2rem;
+  width: 300px;
+  height: 75px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bubble-link {
+  text-decoration: none;
+  background: transparent;
+}
+
+.content-logo {
+  max-width: 100px;
+  height: auto;
+  background: transparent;
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+  background: transparent;
+}
+.content-name {
+  background: transparent;
+  margin-right: 60px;
+}
+
+.contact-selfie {
+  width: 20vw;
+}

@@ -1,0 +1,25 @@
+.resume-download-button {
+    
+}
+
+a {
+    color: rgb(199, 199, 199);
+    background: transparent;
+    text-decoration: none;
+}
+
+.resume-bubble {
+    border: 2px solid #BDB679;
+    background: #202020;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+}
