@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.PNG" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/nav.js"></script>
+    <title>Jon's Portfolio</title>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <nav id="nav">
+        <ul class="nav-container">
+            <li><button id="nav-button"><img src="images/three-bar.png" alt="" class="nav-icon"></button></li>
+
+            <li class="home-link"><a href="#home" id="home-link" class="nav-link">Home</a></li>
+            <li><a href=#about id="about-link" class="nav-link">About</a></li>
+            <li><a href=#skills id="skills-link" class="nav-link">Skills</a></li>
+            <li><a href=#projects id="projects-link" class="nav-link">Projects</a></li>
+            <li><a href=#contact id="contact-link" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <!-- HOME -->
+        <div class="home" id="home">
+            <div class="home-main">
+                <h1 class="home-name" tabindex="0">JONATHAN<br>MCFEE</h1>
+                <p class="home-desc" tabindex="0">Computer Science<br>
+                                        University of Michigan '25<br>
+                                        Aspiring Software Engineer</p>
+            </div>
+            <ul class="home-nav">  
+                <li><a href=#about id="about-link" class="home-nav-link">About</a></li>
+                <li><a href=#skills id="skills-link" class="home-nav-link">Skills</a></li>
+                <li><a href=#projects id="projects-link" class="home-nav-link">Projects</a></li>
+                <li><a href=#contact id="contact-link" class="home-nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <!-- ABOUT -->
+        <div class="about" id="about">
+            <img src="images/portrait.jpg" alt="Portrait photo of me" tabindex="0">
+
+            <h2 class="about-me" tabindex="0">
+                About Me
+            </h2>
+            <p class="about-desc" tabindex="0">
+                I am a Junior majoring in Computer Science at the University of Michigan. I am passionate about software engineering and am looking forward to working as a Software Engineer Intern at Etsy during Summer '24. Some of my hobbies include cooking, gaming, pickleball, and hanging out with my friends. 
+            </p>
+
+        </div>
+        <!-- SKILLS -->
+        <div class="skills" id="skills">
+            <h2 class="skills-title">Skills</h2>
+            <!-- <p class="swipe-instructions">Swipe left to view more</p> -->
+            <div id="carousel" class="carousel">
+                <div class="bubble-container">
+                    <div class="info-bubble--static" tabindex="0">
+                        <h3 class="bubble-title">Languages</h3>
+                        <p class="bubble-content">
+                            C/C++, Python, JavaScript, HTML, CSS, MATLAB
+                        </p>
+                    </div>
+                    <div class="info-bubble--static" tabindex="0">
+                        <h3 class="bubble-title">Relevant Courses</h3>
+                        <p class="bubble-content">
+                            Operating Systems, Software Engineering,
+                            Web Design, Data Structures and Algorithms,
+                            Computer Architecture
+                        </p>
+                    </div>
+                    <div class="info-bubble--static" tabindex="0">
+                        <h3 class="bubble-title">Interests</h3>
+                        <p class="bubble-content">
+                            Software Engineering, Fullstack Engineering,
+                            Backend Engineering, Finance/Trading, Machine Learning
+                        </p>
+                    </div>
+                    <div class="info-bubble--static" tabindex="0">
+                        <h3 class="bubble-title">Technologies</h3>
+                        <p class="bubble-content">
+                            Linux, Windows, AWS, Git, DynamoDB, SQL, JSON,
+                            Node.js, Express.js, React.js
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROJECTS -->
+        <div class="projects" id="projects">
+            <h2 class="projects-title">Projects</h2>
+            <p class="swipe-instructions">Click card for more information,<br>(space if using keyboard)</p>
+            <div class="carousel">
+                <div class="bubble-container">
+                    <div class="info-bubble flippable" tabindex="0">
+
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Thread Library</h3>
+                                <p>
+                                    Impelemented a user thread library
+                                    in C++ with full concurrency support
+                                    using mutex and CVs
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: C++<br>
+                                    Use Case: Thread libraries are useful for
+                                    creating applications that require multiple seperate tasks simultaneously
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-bubble flippable" tabindex="0">
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Open Source Contribution</h3>
+                                <p>
+                                    Contributed to ClickHouse open-source database.
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: C++<br>
+                                    Use Case: ClickHouse is actively used by many applications for data storage.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-bubble flippable" tabindex="0">
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Multi-threaded Chat Network</h3>
+                                <p>
+                                    Utilized Windows sockets, networking, and thread APIs to build a chat client-server program in C++.
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: C++<br>
+                                    Use Case: Client-Server communication is common for internet-enabled applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-bubble flippable" tabindex="0">
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Stock Price Analysis</h3>
+                                <p>
+                                    Analyzed Netflix's (NFLX) stock price against the frequency of Tweets for its Top 10 shows to identify price indicators.
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: Python, SQLite<br>
+                                    Use Case: Identify patterns between the popularity of Netflix's shows and their stock price.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-bubble flippable" tabindex="0">
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Pipelined CPU Simulation</h3>
+                                <p>
+                                    Developed a simplified 32-bit ARM CPU simulator with data-forwarding.
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: C<br>
+                                    Use Case: Understand how assembly is executed by a machine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-bubble flippable" tabindex="0">
+                        <div class="info-bubble-inner">
+                            <div class="bubble-content-front">
+                                <h3 class="bubble-title">Delta Debugger</h3>
+                                <p>
+                                    Designed a Python script that identifies the minimal interesting subset of a given set.
+                                </p>
+                            </div>
+                            <div class="bubble-content-back">
+                                <h3 class="bubble-title">More Info</h3>
+                                <p>
+                                    Language: Python<br>
+                                    Use Case: Identifying which changes or circumstances cause a bug.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- CONTACT -->
+        <div class="contact" id="contact">
+            <h2 class="contact-title">Connect With Me</h2>
+
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="contact-bubble">
+                        <a href="https://www.linkedin.com/in/jmcfee/" rel="noreferrer" target="_blank">
+                            <div class="contact-bubble-inside">
+                                <img src="images/linkedinlogo.png">
+                                <p>LinkedIn</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-bubble">
+                        <a href="https://github.com/jonmcfee03" rel="noreferrer" target="_blank">
+                            <div class="contact-bubble-inside">
+                                <img src="images/githublogo.png">
+                                <p>GitHub</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-bubble">
+                        <a href="mailto:jmcfee@umich.edu" rel="noreferrer">
+                            <div class="contact-bubble-inside">
+                                <img src="images/emaillogo.png">
+                                <p>Email</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-bubble">
+                        <a href="Resume - Jonathan McFee.pdf" target="_blank"> 
+                            <div class="contact-bubble-inside">
+                                <img src="images/resumelogo.png">
+                                <p>Resume</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <img src="images/michiganphoto.jpg" class="michigan-photo"
+                alt="Image of me standing next to University of Michigan sign">
+            </div>
+
+            <a href="#main" class="return-to-top">Return to top of page</a>
+        </div> 
+    </main>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
